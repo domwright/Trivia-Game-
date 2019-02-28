@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Trivia Game</title>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--javascript-->
+    <script src="assets/javascript/app.js" type="text/javascript"></script>
+    <!--reset-->
+    <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
+    <!--css-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <button type="button" id="startButton">Start</button>
+
+    <div class="container">
+        <h1>TRIVIA GAME</h1>
+        <div class="quiz">
+            <hr style="margin-bottom: 20px">
+            <p id="score"></p>
+        </div>
+        
+        <div class="triviaQuiz">
+        <form name="submit" onsubmit="return onSubmit()"></form>
+            <div class="triviaQuestions">
+                <h3>Who is Thor’s adopted sibling?</h3>
+                <br>
+                <input type="radio" name="question1" value="A">Odin<br>
+                <input type="radio" name="question1" value="B">Loki<br>
+                <input type="radio" name="question1" value="C">Erik Selvig<br>
+                <input type="radio" name="question1" value="D">Laufey<br>
+                
+                <br>
+                <br>
+
+                <h3>Who does Bruce Banner become?</h3>
+                <br>
+                <input type="radio" name="question2" value="A">Spiderman<br>
+                <input type="radio" name="question2" value="B">Ironman<br>
+                <input type="radio" name="question2" value="C">Hulk<br>
+                <input type="radio" name="question2" value="D">Captain America<br>
+                
+                <br>
+                <br>
+                
+                <h3>In “Captain America: Civil War”, who rules Wakanda?</h3>
+                <br>
+                <input type="radio" name="question3" value="A">HYDRA<br>
+                <input type="radio" name="question3" value="B">Black Panther<br>
+                <input type="radio" name="question3" value="C">Steve Rodgers<br>
+                <input type="radio" name="question3" value="D">Winter Soldier<br>
+                
+                <br>
+                <br>
+
+                <h3>What do Spider Man’s powers help him to do?</h3>
+                <br>
+                <input type="radio" name="question4" value="A">travel through time<br>
+                <input type="radio" name="question4" value="B">become invisible<br>
+                <input type="radio" name="question4" value="C">fly<br>
+                <input type="radio" name="question4" value="D">fight crime on the street<br>
+                
+                <br>
+                <br>
+
+                <h3>What is the name of Peter Quill’s alter-ego in Guardians of the Galaxy?</h3>
+                <br>
+                <input type="radio" name="question5" value="A">Yondu<br>
+                <input type="radio" name="question5" value="B">Drax<br>
+                <input type="radio" name="question5" value="C">Star-Lord<br>
+                <input type="radio" name="question5" value="D">Groot<br>
+            </div>
+            <br>
+            <button id ="submitButton" type="submit">Done</button>                  
+        </div>
+
+            <hr style="margin-top: 50px">
+
+    </div>
+</body>
+</html>
